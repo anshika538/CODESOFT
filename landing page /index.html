@@ -3,82 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anshika Gautam - Portfolio</title>
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <!-- Font Awesome for Icons -->
+  <title>Anshika Gautam - Landing Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <div class="logo">Anshika Gautam</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">My Services</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Introduction Section -->
-  <section class="intro">
-    <h1>Hi, I'm Anshika Gautam 👋</h1>
-    <p>A passionate Full Stack Developer with experience in building web applications using HTML, CSS, JavaScript, Python, MongoDB, and other frameworks. I am a BCA graduate.</p>
-    <div class="buttons">
-      <a href="#contact" class="contact-btn">Contact Me</a>
-      <a href="resume.pdf" target="_blank" class="resume-btn">See My Resume</a>
-    </div>
-    <div class="social-links">
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Anshika Gautam 👋</h1>
+      <p>A passionate Full Stack Developer with experience in HTML, CSS, JavaScript, Python, and MongoDB.</p>
+      <div class="hero-buttons">
+        <a href="#services" class="hero-btn">Explore My Work</a>
+        <a href="resume.pdf" target="_blank" class="hero-btn">See My Resume</a>
+      </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>MongoDB</li>
-      <li>Web Development</li>
-    </ul>
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a BCA graduate with a passion for building web applications. My expertise includes HTML, CSS, JavaScript, Python, MongoDB, and web development frameworks.</p>
+    <a href="resume.pdf" target="_blank" class="about-btn">Read More</a>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <p>Coming soon...</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      
-      <button type="submit">Send Message</button>
-    </form>
+  <!-- My Services Section -->
+  <section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Creating responsive and dynamic web applications using modern frameworks.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Creative Design</h3>
+        <p>Designing visually appealing and user-friendly interfaces.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-database"></i>
+        <h3>Data Management</h3>
+        <p>Building and managing databases with MongoDB and other technologies.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Anshika Gautam</p>
+    <div class="social-links">
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
-  
-  <script src="script.js"></script>
 </body>
 </html>
-
